@@ -7,5 +7,5 @@ if [ $# -eq 0 ]; then
 elif [ $# -eq 1 ]; then
     $DOCKER run --rm -v $(pwd):/pg maikonp/python372 $1
 else
-    echo "引数の数が違います"
+    echo "Bad command line argumen number."
 fi
